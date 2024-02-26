@@ -1,3 +1,5 @@
+# hatch completion
 source <(_HATCH_COMPLETE=bash_source hatch)
 
+# pipx completion
 eval "$(register-python-argcomplete pipx)"
