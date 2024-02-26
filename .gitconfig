@@ -1,0 +1,60 @@
+[user]
+  email = 12420863+danchev@users.noreply.github.com
+  name = Dobri Danchev
+[commit]
+  gpgsign = false
+[gpg]
+  program = gpg2
+[credential "https://github.com"]
+  helper = !/usr/bin/gh auth git-credential
+[init]
+  defaultBranch = master
+[alias]
+  s = status
+  co = checkout
+  cob = checkout -b
+  del = branch -D    
+  br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+  save = !git add -A && git commit -m 'chore: savepoint'
+  undo = reset HEAD~1 --mixed
+  res = !git reset --hard
+  done = !git push origin HEAD
+  lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = red reverse
+  local = blue
+  remote = green
+[color "diff"]
+  meta = yellow
+  frag = magenta
+  old = red bold
+  new = green
+  plain = white
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[push]
+  default = current
+[pull]
+  default = current
+[diff]
+  mnemonicprefix = true
+[branch]
+  autosetuprebase = always
+[apply]
+  whitespace = nowarn
+[rerere]
+  enabled = false
+[rebase]
+  autosquash = true
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
+[core]
+  autocrlf = input
