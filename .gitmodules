@@ -1,3 +1,6 @@
-[submodule ".vim"]
-	path = .vim
-	url = https://gitlab.com/SpaceVim/SpaceVim.git
+[submodule ".config/spacevim"]
+	path = .config/spacevim
+	url = https://spacevim.org/git/repos/SpaceVim/
+[submodule "/home/ddanchev/.SpaceVim"]
+	path = /home/ddanchev/.SpaceVim
+	url = https://spacevim.org/git/repos/SpaceVim/
