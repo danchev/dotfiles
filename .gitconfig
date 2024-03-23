@@ -1,6 +1,11 @@
 [user]
-  email = 12420863+danchev@users.noreply.github.com
   name = Dobri Danchev
+  email = 12420863+danchev@users.noreply.github.com
+[author]
+  name = Dobri Danchev
+  email = 12420863+danchev@users.noreply.github.com
+[github]
+  user = danchev
 [commit]
   gpgsign = false
 [gpg]
