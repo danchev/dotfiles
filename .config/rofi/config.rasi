@@ -1,0 +1,14 @@
+configuration {
+	modi: "drun,run,window,ssh,combi";
+	lines: 7;
+	font: "sans-serif 6";
+	bw: 0;
+	padding: 0;
+	show-icons: false;
+	matching: "fuzzy";
+	line-margin: 0;
+	line-padding: 6;
+	separator-style: "none";
+	hide-scrollbar: true;
+}
+@theme "~/.config/rofi/nord.rasi"
