@@ -17,4 +17,4 @@ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 # pipx
 python3 -m pip install --user pipx
 python3 -m pipx ensurepath
-pipx install argcomplete hatch refurb ruff ranger-fm pudb memray scalene
+pipx install argcomplete hatch refurb ruff ranger-fm pudb memray scalene commitizen
