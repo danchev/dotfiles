@@ -1,0 +1,7 @@
+# Save in ~/Videos
+-o ~/Videos/%(title)s.%(ext)s
+
+
+
+
+
