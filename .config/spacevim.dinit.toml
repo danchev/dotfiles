@@ -1,0 +1,116 @@
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2020 Wang Shidong & Contributor
+# Author: Wang Shidong < wsdjeg at 163.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+    # set spacevim theme. by default colorscheme layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer
+    colorscheme = "gruvbox"
+    colorscheme_bg = "dark"
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    # true colors
+    enable_guicolors = true
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    statusline_separator = "arrow"
+    statusline_iseparator = "arrow"
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = true
+    enable_statusline_mode = false
+
+    colorscheme = "nord"
+
+    # Autoupdates
+    automatic_update = true
+
+    filemanager = "nerdtree"
+    enable_vimfiler_welcome = true
+
+[[layers]]
+  name = "colorscheme"
+
+[[layers]]  
+# Enable autocomplete layer
+  name = "autocomplete"
+    auto_completion_return_key_behavior = "complete"
+    auto_completion_tab_key_behavior = "smart"
+
+[[layers]]  
+  name = "shell"
+    default_position = "top"
+    default_height = 30
+
+[[layers]]  
+  name = "lang#python"
+    python_file_head = [
+        '#!/usr/bin/env python',
+        '# -*- coding: utf-8 -*-',
+        '',
+        '##############################################################################',
+        '#                                                                            #',  
+        '# Copyright (C) 2023 Dobri Danchev                                           #',
+        '#                                                                            #',
+        '# This program is free software: you can redistribute it and/or modify       #',
+        '# it under the terms of the GNU Affero General Public License as             #',
+        '# published by the Free Software Foundation, either version 3 of the         #',
+        '# License, or (at your option) any later version.                            #',
+        '#                                                                            #',
+        '# This program is distributed in the hope that it will be useful,            #',
+        '# but WITHOUT ANY WARRANTY; without even the implied warranty of             #',
+        '# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the              #',
+        '# GNU Affero General Public License for more details.                        #',
+        '#                                                                            #',  
+        '# You should have received a copy of the GNU Affero General Public License   #',
+        '# along with this program.  If not, see <https://www.gnu.org/licenses/>.org  #',
+        '#                                                                            #',  
+        '##############################################################################',
+        ''
+    ]
+
+[[layers]]  
+  name = "checkers"
+    show_cursor_error = false
+    lint_on_the_fly = true
+
+[[layers]]  
+  name = "tools#mpv"
+    musics_directory = '\mnt\nfs\music'
+ 
+[[layers]]  
+  name = "VersionControl"
+    
+[[layers]]  
+  name = "tools"
+
+[[layers]]
+  name = "test"
+    [layers.override_config]
+        python_runner = "pytest"
+
+[[layers]]
+  name = "core#statusline"
+
+[[layers]]
+  name = 'core'
+    filetree_show_hidden = true
+    enable_smooth_scrolling = true
+
+[[layers]]
+  name = "git"
+
+[[layers]]
+  name = "github"
+ 
+[[layers]]
+  name = "tmux"
+  name = "operator"
+#  name = "org"
+
+#[[custom_plugins]]
+#  name = 'jceb/vim-orgmode'

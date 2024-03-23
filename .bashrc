@@ -33,5 +33,3 @@ eval "$(pyenv init -)"
 
 # i3 workaround
 export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
-
-alias svim='vim -u ~/.config/spacevim/vimrc'
