@@ -20,3 +20,6 @@ alias kns="kubens"
 alias t="terraform"
 alias g="gcloud"
 alias a="aws"
+alias y="yadm"
+alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+
